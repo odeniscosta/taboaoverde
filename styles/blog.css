@@ -22,7 +22,7 @@
 /* ── Blog header (topo da listagem) ── */
 .blog-header {
   background: var(--midnight);
-  padding: calc(var(--section-y) + 64px) 0 clamp(48px, 7vw, 80px);
+  padding: calc(var(--section-y) + 140px) 0 clamp(48px, 7vw, 80px);
   text-align: center;
 }
 .blog-header .eyebrow { color: var(--lime); }
@@ -47,7 +47,7 @@
   background: var(--white);
   border-bottom: 1px solid rgba(15,25,35,0.08);
   position: sticky;
-  top: 64px;
+  top: 146px;
   z-index: 50;
 }
 .blog-filters {
@@ -193,7 +193,7 @@
 
 .blog-post-hero {
   background: var(--midnight);
-  padding: calc(var(--section-y) + 64px) 0 clamp(40px, 5vw, 60px);
+  padding: calc(var(--section-y) + 140px) 0 clamp(40px, 5vw, 60px);
 }
 .blog-post-breadcrumb {
   display: flex;
