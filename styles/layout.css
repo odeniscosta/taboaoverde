@@ -18,25 +18,36 @@
 }
 
 /* iGreen partner strip — single credibility line below the nav row */
-.igreen-strip { border-top: 1px solid rgba(15,25,35,0.07); }
+.igreen-strip {
+  border-top: 1px solid rgba(15,25,35,0.07);
+  overflow-x: hidden;
+}
 .igreen-strip-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
-  padding: 6px 0;
+  gap: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-.igreen-logo { height: 18px; width: auto; display: block; }
+.igreen-logo { height: 18px; width: auto; display: block; flex-shrink: 0; }
 .igreen-strip-text {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--ink-soft);
   letter-spacing: 0.01em;
-  white-space: nowrap;
+  line-height: 1.3;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
-.site-header .wrap {
+/* Nav row — scoped to the header's direct wrap only, so it never
+   leaks into the nested .igreen-strip-wrap (which also uses .wrap
+   for shared max-width/padding but needs its own centered layout) */
+.site-header > .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,8 +153,8 @@ body.nav-open .nav-toggle { color: var(--on-dark); }
   .site-header.is-scrolled { padding: 8px 0 5px; }
   .brand { gap: 8px; }
   .igreen-logo { height: 16px; }
-  .igreen-strip-wrap { padding: 5px 0; gap: 6px; }
-  .igreen-strip-text { font-size: 10px; }
+  .igreen-strip-wrap { padding-top: 5px; padding-bottom: 5px; gap: 8px; }
+  .igreen-strip-text { font-size: 11px; }
 }
 @media (max-width: 480px) {
   .brand-logo { height: 34px; width: 34px; }
