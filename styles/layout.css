@@ -3,44 +3,39 @@
    ============================================================ */
 
 /* ── Header ── */
-.site-header-group {
+.site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
   background: var(--white);
   box-shadow: 0 1px 0 rgba(15,25,35,0.08);
-  transition: box-shadow .3s var(--ease);
+  padding: 12px 0 8px;
+  transition: box-shadow .3s var(--ease), padding .3s var(--ease);
 }
-.site-header-group.is-scrolled {
+.site-header.is-scrolled {
   box-shadow: 0 4px 24px -6px rgba(15,25,35,0.18);
+  padding: 9px 0 6px;
 }
 
-/* iGreen partner strips */
-.igreen-strip { background: var(--white); }
-.igreen-strip--top { border-bottom: 1px solid rgba(15,25,35,0.07); }
-.igreen-strip--bottom { border-top: 1px solid rgba(15,25,35,0.07); }
+/* iGreen partner strip — single credibility line below the nav row */
+.igreen-strip { border-top: 1px solid rgba(15,25,35,0.07); }
 .igreen-strip-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 7px 0;
+  gap: 8px;
+  padding: 6px 0;
 }
-.igreen-logo { height: 22px; width: auto; display: block; }
+.igreen-logo { height: 18px; width: auto; display: block; }
 .igreen-strip-text {
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--ink-soft);
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
-.site-header {
-  padding: 14px 0;
-  transition: padding .3s var(--ease);
-}
-.site-header-group.is-scrolled .site-header { padding: 11px 0; }
 .site-header .wrap {
   display: flex;
   align-items: center;
@@ -140,15 +135,19 @@ body.nav-open .nav-toggle { color: var(--on-dark); }
 }
 
 .nav-wa-btn { display: none; }
-@media (max-width: 480px) {
-  .brand-logo { height: 36px; width: 36px; }
+@media (max-width: 600px) {
+  .brand-logo { height: 38px; width: 38px; }
   .brand-name { font-size: 17px; }
-  .site-header { padding: 10px 0; }
-  .site-header-group.is-scrolled .site-header { padding: 8px 0; }
+  .site-header { padding: 10px 0 6px; }
+  .site-header.is-scrolled { padding: 8px 0 5px; }
   .brand { gap: 8px; }
-  .igreen-logo { height: 18px; }
-  .igreen-strip-wrap { padding: 6px 0; }
-  .igreen-strip-text { font-size: 10.5px; }
+  .igreen-logo { height: 16px; }
+  .igreen-strip-wrap { padding: 5px 0; gap: 6px; }
+  .igreen-strip-text { font-size: 10px; }
+}
+@media (max-width: 480px) {
+  .brand-logo { height: 34px; width: 34px; }
+  .brand-name { font-size: 16px; }
 }
 
 /* ── Footer ── */

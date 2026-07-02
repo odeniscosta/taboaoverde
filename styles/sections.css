@@ -8,7 +8,7 @@
   background: var(--midnight);
   display: flex;
   align-items: center;
-  padding: 206px 0 80px;
+  padding: 156px 0 80px;
   position: relative;
   overflow: hidden;
 }
@@ -114,12 +114,12 @@
 @media (max-width: 860px) {
   .hero-wrap { grid-template-columns: 1fr; }
   .hero-visual { order: -1; max-width: 300px; margin: 0 auto; }
-  .hero { padding: 110px 0 64px; }
+  .hero { padding: 112px 0 64px; }
   .stat-chip { display: none; }
 }
 @media (max-width: 600px) {
   .hero-visual { display: none; }
-  .hero { padding: 96px 0 56px; min-height: auto; }
+  .hero { padding: 92px 0 56px; min-height: auto; }
   .hero-lede { font-size: 16px; margin-bottom: 28px; }
   .hero-badge { font-size: 11px; padding: 6px 12px; margin-bottom: 18px; }
 }
