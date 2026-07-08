@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seja Licenciado iGreen Energy | Denis Costa</title>
+<meta name="description" content="Torne-se licenciado autorizado iGreen Energy e ganhe comissão recorrente indicando energia limpa. Sem estoque, sem obra, 100% digital. Fale com Denis Costa no WhatsApp.">
+<meta name="theme-color" content="#0b3d2e">
+<link rel="canonical" href="https://www.taboaoverde.com.br/seja-licenciado.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph (título/descrição usados no preview ao compartilhar no WhatsApp/Instagram) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.taboaoverde.com.br/seja-licenciado.html">
+<meta property="og:title" content="Seja Licenciado iGreen Energy | Denis Costa">
+<meta property="og:description" content="Ganhe comissão recorrente indicando energia limpa. Sem estoque, sem obra, 100% digital — comece mantendo seu emprego atual.">
+<meta property="og:locale" content="pt_BR">
+<!-- EDITE: adicione uma imagem 1200x630px em og-image.jpg na mesma pasta deste arquivo e descomente a linha abaixo -->
+<!-- <meta property="og:image" content="https://SEU-DOMINIO/og-image.jpg"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMJLV6KQ6T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YMJLV6KQ6T');
+</script>
+
+<!--
+  ANALYTICS: o GA4 acima já usa o ID deste site. Para adicionar Meta Pixel, insira o snippet aqui, por exemplo:
+  <script>
+    !function(f,b,e,v,n,t,s){...}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  O clique nos botões de WhatsApp já dispara trackCTAClick() — veja o JS no fim do arquivo
+  para saber onde chamar gtag('event', ...) / fbq('track', 'Lead') dentro dessa função.
+-->
+
+<style>
+  :root{
+    --green-dark:   #0b3d2e;
+    --green-darker: #082a20;
+    --green-mid:    #0e4a37;
+    --gold:         #f5b820;
+    --gold-deep:    #c9930f;
+    --white:        #ffffff;
+    --whatsapp:     #25d366;
+    --whatsapp-deep:#1ebc59;
+    --paper:        #f5f8f4;
+    --ink:          #10241c;
+    --muted:        #5c6f66;
+    --line:         #dfe7e1;
+    --maxw: 1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--white);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    line-height:1.18;
+    margin:0 0 14px;
+    text-wrap:balance;
+    color:var(--green-dark);
+  }
+  p{margin:0 0 14px;}
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+
+  section{padding:64px 0;}
+  @media(min-width:768px){ section{padding:96px 0;} }
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Inter',sans-serif;font-weight:700;font-size:.78rem;
+    letter-spacing:.09em;text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  /* ---------- Botões ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    font-family:'Poppins',sans-serif;font-weight:700;
+    font-size:1.02rem;
+    padding:17px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    border:none;cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    line-height:1.2;
+  }
+  .btn:hover{filter:brightness(1.05);}
+  .btn:active{transform:translateY(1px);}
+  .btn-gold{
+    background:var(--gold);
+    color:var(--green-darker);
+    box-shadow:0 10px 24px -8px rgba(245,184,32,.55);
+  }
+  .btn-whatsapp{
+    background:var(--whatsapp);
+    color:var(--white);
+    box-shadow:0 10px 24px -8px rgba(37,211,102,.55);
+  }
+  .btn-block{width:100%;}
+  .btn svg{width:22px;height:22px;flex-shrink:0;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--green-dark);
+    color:var(--white);
+    padding:72px 0 56px;
+    text-align:center;
+  }
+  .hero h1{
+    color:var(--white);
+    font-size:clamp(1.9rem,5.4vw,3.1rem);
+    max-width:16ch;
+    margin:18px auto 16px;
+  }
+  .hero .sub{
+    color:rgba(255,255,255,.82);
+    font-size:clamp(1.02rem,2.6vw,1.2rem);
+    max-width:46ch;
+    margin:0 auto 32px;
+  }
+  .hero-cta{margin-bottom:18px;}
+  .hero .badge-cred{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.86rem;color:rgba(255,255,255,.75);
+    border:1px solid rgba(245,184,32,.4);
+    border-radius:999px;
+    padding:8px 16px;
+  }
+  .hero .badge-cred svg{width:16px;height:16px;color:var(--gold);flex-shrink:0;}
+
+  /* ---------- PROVA SOCIAL ---------- */
+  .prova-social{
+    background:var(--green-mid);
+    padding:36px 0;
+    border-top:1px solid rgba(245,184,32,.25);
+    border-bottom:1px solid rgba(245,184,32,.25);
+  }
+  .prova-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+    text-align:center;
+  }
+  @media(min-width:640px){ .prova-grid{grid-template-columns:repeat(3,1fr);gap:16px;} }
+  .prova-item .num{
+    font-family:'Poppins',sans-serif;font-weight:800;
+    font-size:clamp(1.5rem,4vw,2rem);
+    color:var(--gold);
+    margin-bottom:4px;
+  }
+  .prova-item .label{
+    color:rgba(255,255,255,.85);
+    font-size:.92rem;
+  }
+
+  /* ---------- COMO FUNCIONA ---------- */
+  .section-head{text-align:center;max-width:52ch;margin:0 auto 48px;}
+  .section-head h2{font-size:clamp(1.6rem,4vw,2.2rem);}
+  .section-head p{color:var(--muted);font-size:1.05rem;}
+
+  .steps{
+    display:grid;grid-template-columns:1fr;gap:28px;
+    counter-reset:step;
+  }
+  @media(min-width:768px){ .steps{grid-template-columns:repeat(3,1fr);gap:24px;} }
+  .step-card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:32px 26px;
+    text-align:left;
+    position:relative;
+  }
+  .step-num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:40px;height:40px;border-radius:999px;
+    background:var(--green-dark);color:var(--gold);
+    font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;
+    margin-bottom:18px;
+  }
+  .step-card .icon{
+    width:44px;height:44px;color:var(--gold);margin-bottom:14px;
+  }
+  .step-card h3{font-size:1.2rem;margin-bottom:8px;}
+  .step-card p{color:var(--muted);margin:0;}
+
+  .mid-cta{text-align:center;margin-top:48px;}
+
+  /* ---------- POR QUE É SÓLIDO ---------- */
+  .solido{background:var(--paper);}
+  .solido-grid{
+    display:grid;grid-template-columns:1fr;gap:20px;
+  }
+  @media(min-width:640px){ .solido-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:1000px){ .solido-grid{grid-template-columns:repeat(3,1fr);} }
+  .solido-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:26px 24px;
+  }
+  .solido-card .icon{
+    width:36px;height:36px;color:var(--green-dark);
+    background:rgba(245,184,32,.18);
+    border-radius:10px;
+    padding:8px;
+    margin-bottom:14px;
+    box-sizing:content-box;
+  }
+  .solido-card h3{font-size:1.05rem;margin-bottom:6px;}
+  .solido-card p{color:var(--muted);font-size:.95rem;margin:0;}
+
+  /* ---------- PARA QUEM É ---------- */
+  .para-quem-grid{
+    display:grid;grid-template-columns:1fr;gap:20px;
+  }
+  @media(min-width:768px){ .para-quem-grid{grid-template-columns:1fr 1fr;} }
+  .pq-card{
+    border-radius:16px;
+    padding:32px 28px;
+  }
+  .pq-card.sim{
+    background:var(--green-dark);
+    color:var(--white);
+    border:2px solid var(--gold);
+  }
+  .pq-card.nao{
+    background:var(--white);
+    color:var(--ink);
+    border:2px solid var(--line);
+  }
+  .pq-card h3{
+    font-size:1.15rem;
+    margin-bottom:18px;
+  }
+  .pq-card.sim h3{color:var(--gold);}
+  .pq-card.nao h3{color:var(--muted);}
+  .pq-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+  .pq-list li{display:flex;align-items:flex-start;gap:12px;font-size:.98rem;}
+  .pq-list svg{width:20px;height:20px;flex-shrink:0;margin-top:2px;}
+  .pq-card.sim svg{color:var(--gold);}
+  .pq-card.nao svg{color:var(--muted);}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:760px;margin:0 auto;display:grid;gap:12px;}
+  .faq-item{
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+    background:var(--white);
+  }
+  .faq-q{
+    width:100%;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    background:none;border:none;cursor:pointer;
+    padding:20px 22px;
+    text-align:left;
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;
+    color:var(--green-dark);
+  }
+  .faq-q .chev{
+    width:20px;height:20px;flex-shrink:0;color:var(--gold);
+    transition:transform .25s ease;
+  }
+  .faq-item.is-open .faq-q .chev{transform:rotate(180deg);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+  }
+  .faq-a-inner{padding:0 22px 20px;color:var(--muted);}
+  .faq-a-inner p{margin:0;}
+
+  /* ---------- CTA FINAL ---------- */
+  .cta-final{
+    background:var(--gold);
+    text-align:center;
+  }
+  .cta-final h2{
+    color:var(--green-darker);
+    font-size:clamp(1.5rem,4.4vw,2.1rem);
+    max-width:22ch;
+    margin:0 auto 28px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--green-darker);
+    color:rgba(255,255,255,.72);
+    padding:40px 0 100px;
+    text-align:center;
+    font-size:.88rem;
+  }
+  footer .foot-name{
+    font-family:'Poppins',sans-serif;font-weight:700;
+    color:var(--white);
+    font-size:1.02rem;
+    margin-bottom:6px;
+  }
+  footer .foot-contact{margin-bottom:18px;}
+  footer .foot-contact a{text-decoration:underline;text-underline-offset:3px;}
+  footer .disclaimer{
+    max-width:56ch;margin:0 auto;
+    color:rgba(255,255,255,.5);
+    font-size:.78rem;
+    line-height:1.6;
+  }
+
+  /* ---------- WHATSAPP FLUTUANTE ---------- */
+  .wa-float{
+    position:fixed;
+    right:18px;bottom:18px;
+    width:60px;height:60px;
+    border-radius:999px;
+    background:var(--whatsapp);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px -6px rgba(0,0,0,.4);
+    z-index:50;
+    text-decoration:none;
+  }
+  .wa-float svg{width:30px;height:30px;color:var(--white);}
+  .wa-float::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:999px;
+    background:var(--whatsapp);
+    animation:wa-pulse 2.2s ease-out infinite;
+    z-index:-1;
+  }
+  @keyframes wa-pulse{
+    0%{transform:scale(1);opacity:.55;}
+    100%{transform:scale(1.9);opacity:0;}
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.is-visible{opacity:1;transform:none;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
+    .wa-float::before{animation:none;display:none;}
+    .btn,.faq-a{transition:none;}
+  }
+
+  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M12 2 3 7v6c0 5 3.8 8.5 9 9 5.2-.5 9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Licenciado Autorizado iGreen Energy
+    </span>
+    <h1>Ganhe comissão recorrente toda vez que alguém pagar a conta de luz</h1>
+    <p class="sub">Torne-se licenciado de energia limpa. Sem estoque, sem obra, 100% digital — comece mantendo seu emprego atual.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="https://wa.me/5511966067829?text=Ol%C3%A1%20Denis!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20saber%20mais%20sobre%20como%20ser%20licenciado%20iGreen" target="_blank" rel="noopener" aria-label="Chamar Denis no WhatsApp para saber como funciona" onclick="trackCTAClick('hero')">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.073 23.927a.5.5 0 0 0 .611.61l6.101-1.477A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.523-5.17-1.434l-.37-.22-3.833.927.945-3.742-.242-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Quero saber como funciona
+      </a>
+    </div>
+    <span class="badge-cred">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 3 7v6c0 5 3.8 8.5 9 9 5.2-.5 9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Modelo respaldado pela Lei 14.300/2022
+    </span>
+  </div>
+</header>
+
+<!-- ══════════════════════ PROVA SOCIAL ══════════════════════ -->
+<section class="prova-social">
+  <div class="container">
+    <div class="prova-grid">
+      <div class="prova-item">
+        <div class="num">Até 4%</div>
+        <div class="label">de comissão recorrente por conexão</div>
+      </div>
+      <div class="prova-item">
+        <div class="num">+30 mil</div>
+        <div class="label">estabelecimentos no clube de benefícios</div>
+      </div>
+      <div class="prova-item">
+        <div class="num">Brasil</div>
+        <div class="label">atuação em todo o território nacional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ COMO FUNCIONA ══════════════════════ -->
+<section id="como-funciona">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Como funciona</h2>
+      <p>Três passos simples, sem burocracia e sem investimento em estoque.</p>
+    </div>
+    <div class="steps">
+      <div class="step-card reveal">
+        <span class="step-num">1</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11v2a2 2 0 0 0 2 2h1l3 5V4L6 9H5a2 2 0 0 0-2 2Z"/><path d="M15 8a4 4 0 0 1 0 8M18.5 5a8 8 0 0 1 0 14" stroke-linecap="round"/></svg>
+        <h3>Você indica</h3>
+        <p>Apresenta o desconto na conta de luz para pessoas e empresas da sua rede de contatos.</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">2</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="17" r="2.5"/><circle cx="17" cy="7" r="2.5"/><path d="M18 6 6 18" stroke-linecap="round"/></svg>
+        <h3>O cliente economiza</h3>
+        <p>Desconto todo mês na conta, sem obra, sem fidelidade, na mesma distribuidora de sempre.</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">3</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="6" width="19" height="13" rx="2"/><path d="M2.5 10h19" stroke-linecap="round"/><circle cx="7" cy="14.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        <h3>Você recebe</h3>
+        <p>Comissão recorrente todo mês, enquanto o cliente que você indicou estiver ativo.</p>
+      </div>
+    </div>
+    <div class="mid-cta reveal">
+      <a class="btn btn-whatsapp" href="https://wa.me/5511966067829?text=Ol%C3%A1%20Denis!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20saber%20mais%20sobre%20como%20ser%20licenciado%20iGreen" target="_blank" rel="noopener" aria-label="Chamar Denis no WhatsApp" onclick="trackCTAClick('como-funciona')">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.073 23.927a.5.5 0 0 0 .611.61l6.101-1.477A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.523-5.17-1.434l-.37-.22-3.833.927.945-3.742-.242-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Falar com o Denis agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ POR QUE É SÓLIDO ══════════════════════ -->
+<section class="solido" id="por-que-solido">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Por que isso é sólido</h2>
+      <p>Nada de promessa vazia — é um mercado regulado, com estrutura e suporte reais.</p>
+    </div>
+    <div class="solido-grid">
+      <div class="solido-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12" /><path d="M9 21v-8h6v8" /></svg>
+        <h3>Respaldo de peso</h3>
+        <p>Estrutura operada com a Comerc Energia e a Vibra Energia (ex-BR Distribuidora).</p>
+      </div>
+      <div class="solido-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2 3 7v6c0 5 3.8 8.5 9 9 5.2-.5 9-4 9-9V7l-9-5Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Mercado regulado</h3>
+        <p>Atividade amparada pela Lei 14.300/2022, o marco legal da geração distribuída.</p>
+      </div>
+      <div class="solido-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke-linecap="round"/></svg>
+        <h3>+100 usinas solares</h3>
+        <p>Empresa com operação consolidada e mais de 100 usinas solares em atividade.</p>
+      </div>
+      <div class="solido-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H19"/><path d="M8 7h7M8 10.5h7"/></svg>
+        <h3>Treinamento incluso</h3>
+        <p>Capacitação e suporte contínuo para você vender com segurança desde o início.</p>
+      </div>
+      <div class="solido-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4" stroke-linecap="round"/><path d="M9 7h6M9 10h6" stroke-linecap="round"/></svg>
+        <h3>App de gestão</h3>
+        <p>Acompanhamento transparente das suas indicações e comissões, tudo pelo celular.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PARA QUEM É ══════════════════════ -->
+<section id="para-quem">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Isso é pra você?</h2>
+      <p>Prefiro ser direto — esse modelo não serve pra todo mundo.</p>
+    </div>
+    <div class="para-quem-grid">
+      <div class="pq-card sim reveal">
+        <h3>É PARA VOCÊ SE...</h3>
+        <ul class="pq-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Já trabalha com vendas, corretagem ou consultoria</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Tem rede de contatos — pessoal, comercial ou de bairro</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Busca uma renda recorrente, não só um bico pontual</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Pode dedicar algumas horas por semana, no seu ritmo</li>
+        </ul>
+      </div>
+      <div class="pq-card nao reveal">
+        <h3>NÃO É PARA VOCÊ SE...</h3>
+        <ul class="pq-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg> Busca dinheiro fácil sem nenhum esforço</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg> Não quer conversar nem se relacionar com pessoas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mid-cta reveal">
+      <a class="btn btn-gold" href="https://wa.me/5511966067829?text=Ol%C3%A1%20Denis!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20saber%20mais%20sobre%20como%20ser%20licenciado%20iGreen" target="_blank" rel="noopener" aria-label="Chamar Denis no WhatsApp" onclick="trackCTAClick('para-quem')">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.073 23.927a.5.5 0 0 0 .611.61l6.101-1.477A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.523-5.17-1.434l-.37-.22-3.833.927.945-3.742-.242-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Acho que é pra mim — falar com Denis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FAQ ══════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1">
+          Preciso investir em estoque ou equipamento?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-1">
+          <div class="faq-a-inner"><p>Não. Não há compra de estoque, equipamento ou material — o modelo é 100% digital, de indicação.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2">
+          Preciso largar meu emprego?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-2">
+          <div class="faq-a-inner"><p>Não. É um modelo 100% digital que você toca no seu ritmo, nos horários que tiver disponíveis — muita gente começa mantendo o emprego atual.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3">
+          Como recebo as comissões?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-3">
+          <div class="faq-a-inner"><p>Pelo app do licenciado, com acompanhamento transparente. As comissões são creditadas conforme os clientes indicados por você permanecem ativos.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4">
+          O cliente tem fidelidade?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-4">
+          <div class="faq-a-inner"><p>Não. O cliente pode cancelar quando quiser, sem multa — a permanência é por satisfação com a economia, não por contrato.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5">
+          Quanto vou ganhar?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-5">
+          <div class="faq-a-inner"><p>Depende do volume de conexões que você trouxer. A comissão recorrente vai de 2% a 4% por conexão própria — sem promessa de valor fixo, o resultado é proporcional ao seu esforço.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CTA FINAL ══════════════════════ -->
+<section class="cta-final">
+  <div class="container reveal">
+    <h2>Estou expandindo minha equipe. Quer entender os números reais, sem enrolação?</h2>
+    <a class="btn btn-whatsapp" href="https://wa.me/5511966067829?text=Ol%C3%A1%20Denis!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20saber%20mais%20sobre%20como%20ser%20licenciado%20iGreen" target="_blank" rel="noopener" aria-label="Chamar Denis no WhatsApp agora" onclick="trackCTAClick('cta-final')">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.073 23.927a.5.5 0 0 0 .611.61l6.101-1.477A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.523-5.17-1.434l-.37-.22-3.833.927.945-3.742-.242-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Chamar Denis no WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-name">Denis Costa</div>
+    <div class="foot-contact">
+      Licenciado Autorizado iGreen Energy ·
+      <a href="mailto:denis@dexca.com.br">denis@dexca.com.br</a> ·
+      <a href="https://wa.me/5511966067829?text=Ol%C3%A1%20Denis!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20saber%20mais%20sobre%20como%20ser%20licenciado%20iGreen" target="_blank" rel="noopener" onclick="trackCTAClick('footer')">(11) 96606-7829</a>
+    </div>
+    <p class="disclaimer">Página independente de licenciado autorizado. Resultados variam conforme dedicação e volume de conexões. Não constitui promessa de renda.</p>
+  </div>
+</footer>
+
+<!-- ══════════════════════ WHATSAPP FLUTUANTE ══════════════════════ -->
+<a class="wa-float" href="https://wa.me/5511966067829?text=Ol%C3%A1%20Denis!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20saber%20mais%20sobre%20como%20ser%20licenciado%20iGreen" target="_blank" rel="noopener" aria-label="Chamar Denis no WhatsApp" onclick="trackCTAClick('float')">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.855L.073 23.927a.5.5 0 0 0 .611.61l6.101-1.477A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.523-5.17-1.434l-.37-.22-3.833.927.945-3.742-.242-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+(function(){
+  'use strict';
+
+  // ---- Tracking de cliques nos CTAs (WhatsApp) ----
+  // 'location' identifica de qual bloco da página o clique veio: hero, como-funciona, para-quem, cta-final, footer, float
+  window.trackCTAClick = function(location){
+    // EDITE: dispare aqui os eventos de conversão do GA4 / Meta Pixel, por exemplo:
+    // if (typeof gtag === 'function') { gtag('event', 'cta_whatsapp_click', { cta_location: location }); }
+    // if (typeof fbq === 'function') { fbq('track', 'Lead', { content_name: location }); }
+    if (window.dataLayer) {
+      window.dataLayer.push({ event: 'cta_whatsapp_click', cta_location: location });
+    }
+  };
+
+  // ---- Accordion do FAQ ----
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var panel = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item.is-open').forEach(function(openItem){
+        if (openItem !== item) {
+          openItem.classList.remove('is-open');
+          openItem.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if (isOpen) {
+        item.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        panel.style.maxHeight = null;
+      } else {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // ---- Fade-in ao rolar ----
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && reveals.length) {
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function(el){ obs.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+})();
+</script>
+</body>
+</html>
