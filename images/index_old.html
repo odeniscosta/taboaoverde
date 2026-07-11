@@ -161,16 +161,18 @@ details[open] summary::after{transform:rotate(45deg)}
 (function(){
   var USER = "belasartes";
   var PASS = "Solar@2026";
-  if (sessionStorage.getItem("authOk") === "1") {
-    document.body.classList.remove("locked");
-  }
+  function unlock(){ document.body.classList.remove("locked"); }
+  try {
+    if (sessionStorage.getItem("authOk") === "1") { unlock(); }
+  } catch (err) {}
+
   document.getElementById("authForm").addEventListener("submit", function(e){
     e.preventDefault();
-    var u = document.getElementById("authUser").value;
-    var p = document.getElementById("authPass").value;
+    var u = document.getElementById("authUser").value.trim();
+    var p = document.getElementById("authPass").value.trim();
     if (u === USER && p === PASS) {
-      sessionStorage.setItem("authOk", "1");
-      document.body.classList.remove("locked");
+      try { sessionStorage.setItem("authOk", "1"); } catch (err) {}
+      unlock();
     } else {
       document.getElementById("authError").style.display = "block";
     }
