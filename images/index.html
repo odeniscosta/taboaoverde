@@ -167,46 +167,8 @@ details[open] summary::after{transform:rotate(45deg)}
   .phase-det{grid-column:1/-1}
 }
 </style>
-<meta name="robots" content="noindex, nofollow">
 </head>
-<body class="locked">
-
-<div id="authGate" style="position:fixed;inset:0;z-index:99999;background:#0b1420;display:flex;align-items:center;justify-content:center;font-family:sans-serif;">
-  <form id="authForm" style="background:#fff;padding:32px 28px;border-radius:12px;width:280px;box-shadow:0 10px 40px rgba(0,0,0,.3);">
-    <h2 style="margin:0 0 16px;font-size:18px;color:#111;">Área restrita</h2>
-    <input id="authUser" type="text" placeholder="Usuário" autocomplete="username" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;box-sizing:border-box;">
-    <input id="authPass" type="password" placeholder="Senha" autocomplete="current-password" style="width:100%;padding:10px;margin-bottom:14px;border:1px solid #ccc;border-radius:6px;box-sizing:border-box;">
-    <button type="submit" style="width:100%;padding:10px;border:0;border-radius:6px;background:#0b6b3a;color:#fff;font-weight:600;cursor:pointer;">Entrar</button>
-    <p id="authError" style="display:none;color:#c0392b;font-size:13px;margin:10px 0 0;">Usuário ou senha incorretos.</p>
-  </form>
-</div>
-
-<style>
-  body.locked > *:not(#authGate){ display:none !important; }
-</style>
-
-<script>
-(function(){
-  var USER = "belasartes";
-  var PASS = "Solar@2026";
-  function unlock(){ document.body.classList.remove("locked"); }
-  try {
-    if (sessionStorage.getItem("authOk") === "1") { unlock(); }
-  } catch (err) {}
-
-  document.getElementById("authForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    var u = document.getElementById("authUser").value.trim();
-    var p = document.getElementById("authPass").value.trim();
-    if (u === USER && p === PASS) {
-      try { sessionStorage.setItem("authOk", "1"); } catch (err) {}
-      unlock();
-    } else {
-      document.getElementById("authError").style.display = "block";
-    }
-  });
-})();
-</script>
+<body>
 
 <!-- HERO -->
 <header class="hero">
