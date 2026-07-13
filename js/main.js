@@ -7,7 +7,7 @@
 if (typeof CONFIG === 'undefined') {
   window.CONFIG = {
     webhookUrl:   '',
-    whatsapp:     '5511965602811',
+    whatsapp:     '5511966067829',
     gtmId:        '',
     metaPixelId:  '',
   };
