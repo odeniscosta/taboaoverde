@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1E34"/>
+      <stop offset="100%" stop-color="#0B1628"/>
+    </linearGradient>
+    <linearGradient id="shopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4CD680"/>
+      <stop offset="100%" stop-color="#1A7A52"/>
+    </linearGradient>
+    <linearGradient id="tagGradGB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD94A"/>
+      <stop offset="100%" stop-color="#D4A800"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGB)"/>
+
+  <!-- Grid sutil -->
+  <g stroke="rgba(245,197,24,0.05)" stroke-width="1">
+    <line x1="0" y1="90"  x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="250" y1="0" x2="250" y2="450"/>
+    <line x1="550" y1="0" x2="550" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Selo de data (canto superior direito) -->
+  <g transform="translate(556,44)">
+    <rect x="0" y="0" width="176" height="46" rx="23" fill="rgba(245,197,24,0.10)" stroke="url(#tagGradGB)" stroke-width="1.5"/>
+    <circle cx="24" cy="23" r="9" fill="none" stroke="#FFD94A" stroke-width="2"/>
+    <line x1="24" y1="16" x2="24" y2="23" stroke="#FFD94A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="23" x2="29" y2="27" stroke="#FFD94A" stroke-width="2" stroke-linecap="round"/>
+    <text x="44" y="28" text-anchor="start" font-size="15" font-family="Inter,sans-serif" fill="#FFD94A" font-weight="700">1º ago 2026</text>
+  </g>
+
+  <!-- Loja / pequeno comercio (esquerda) -->
+  <g transform="translate(90,235)">
+    <!-- toldo listrado -->
+    <path d="M-6,0 L136,0 L124,-26 a10,10 0 0 0 -9,-6 H-3 a10,10 0 0 0 -9,6 Z" fill="rgba(76,214,128,0.14)" stroke="url(#shopGrad)" stroke-width="2"/>
+    <line x1="6" y1="-28" x2="-2" y2="0" stroke="rgba(76,214,128,0.35)" stroke-width="10"/>
+    <line x1="42" y1="-30" x2="38" y2="0" stroke="rgba(76,214,128,0.20)" stroke-width="10"/>
+    <line x1="78" y1="-30" x2="80" y2="0" stroke="rgba(76,214,128,0.35)" stroke-width="10"/>
+    <line x1="114" y1="-28" x2="122" y2="0" stroke="rgba(76,214,128,0.20)" stroke-width="10"/>
+    <!-- corpo da loja -->
+    <rect x="-6" y="0" width="142" height="88" rx="4" fill="#0D2140" stroke="url(#shopGrad)" stroke-width="2.5"/>
+    <!-- vitrine -->
+    <rect x="6" y="14" width="46" height="40" rx="3" fill="rgba(76,214,128,0.08)" stroke="rgba(76,214,128,0.45)" stroke-width="1.5"/>
+    <!-- porta -->
+    <rect x="62" y="14" width="30" height="74" rx="2" fill="rgba(76,214,128,0.10)" stroke="rgba(76,214,128,0.45)" stroke-width="1.5"/>
+    <circle cx="86" cy="52" r="1.6" fill="#4CD680"/>
+    <!-- segunda vitrine -->
+    <rect x="102" y="14" width="26" height="40" rx="3" fill="rgba(76,214,128,0.08)" stroke="rgba(76,214,128,0.45)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Linhas de conexao (escolha do fornecedor) -->
+  <g fill="none" stroke="rgba(245,197,24,0.55)" stroke-width="2" stroke-linecap="round">
+    <path d="M234,262 C 300,262 300,150 380,150"/>
+    <path d="M234,270 C 300,270 300,214 380,220"/>
+    <path d="M234,286 C 300,286 300,330 380,320"/>
+    <path d="M234,294 C 300,294 300,384 380,390"/>
+  </g>
+  <circle cx="234" cy="278" r="7" fill="#0D2140" stroke="#FFD94A" stroke-width="2.5"/>
+
+  <!-- Fonte 1: Sol -->
+  <g transform="translate(410,150)">
+    <circle r="22" fill="rgba(76,214,128,0.10)" stroke="url(#shopGrad)" stroke-width="2"/>
+    <circle r="9" fill="none" stroke="#4CD680" stroke-width="2"/>
+    <g stroke="#4CD680" stroke-width="2" stroke-linecap="round">
+      <line x1="0" y1="-15" x2="0" y2="-19"/>
+      <line x1="0" y1="15" x2="0" y2="19"/>
+      <line x1="-15" y1="0" x2="-19" y2="0"/>
+      <line x1="15" y1="0" x2="19" y2="0"/>
+      <line x1="-10.6" y1="-10.6" x2="-13.4" y2="-13.4"/>
+      <line x1="10.6" y1="10.6" x2="13.4" y2="13.4"/>
+      <line x1="-10.6" y1="10.6" x2="-13.4" y2="13.4"/>
+      <line x1="10.6" y1="-10.6" x2="13.4" y2="-13.4"/>
+    </g>
+  </g>
+
+  <!-- Fonte 2: Eolica -->
+  <g transform="translate(470,220)">
+    <circle r="22" fill="rgba(76,214,128,0.10)" stroke="url(#shopGrad)" stroke-width="2"/>
+    <line x1="0" y1="16" x2="0" y2="-2" stroke="#4CD680" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#4CD680" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M0,-2 C 6,-9 6,-15 3,-17"/>
+      <path d="M0,-2 C 8,1 13,-2 14,-6"/>
+      <path d="M0,-2 C -4,6 -9,7 -12,4"/>
+    </g>
+    <circle cx="0" cy="-2" r="2.2" fill="#4CD680"/>
+  </g>
+
+  <!-- Fonte 3: Biomassa (folha) -->
+  <g transform="translate(470,320) rotate(-40)">
+    <circle r="22" fill="rgba(76,214,128,0.10)" stroke="url(#shopGrad)" stroke-width="2" transform="rotate(40)"/>
+    <path d="M-13,13 C-15,-3 -3,-15 13,-13 C15,3 3,15 -13,13 Z" fill="none" stroke="#4CD680" stroke-width="2"/>
+    <path d="M-11,11 C-4,4 4,-4 11,-11" stroke="#4CD680" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fonte 4: PCH (gota) -->
+  <g transform="translate(410,390)">
+    <circle r="22" fill="rgba(76,214,128,0.10)" stroke="url(#shopGrad)" stroke-width="2"/>
+    <path d="M0,-14 C 9,-2 13,6 0,15 C -13,6 -9,-2 0,-14 Z" fill="none" stroke="#4CD680" stroke-width="2"/>
+  </g>
+
+  <!-- Selo 6,4 milhoes -->
+  <g transform="translate(556,320)">
+    <rect x="0" y="0" width="176" height="52" rx="26" fill="rgba(76,214,128,0.10)" stroke="rgba(76,214,128,0.45)" stroke-width="1.5"/>
+    <text x="88" y="23" text-anchor="middle" font-size="17" font-family="Inter,sans-serif" fill="#FFD94A" font-weight="700">+6,4 milhões</text>
+    <text x="88" y="41" text-anchor="middle" font-size="12" font-family="Inter,sans-serif" fill="rgba(237,244,240,0.75)" font-weight="500">unidades consumidoras</text>
+  </g>
+
+  <!-- Sparkles decorativos -->
+  <g fill="rgba(245,197,24,0.40)">
+    <circle cx="650" cy="120" r="3"/>
+    <circle cx="672" cy="80"  r="2"/>
+    <circle cx="620" cy="150" r="2"/>
+  </g>
+
+  <!-- Linha do solo -->
+  <line x1="0" y1="400" x2="800" y2="400" stroke="rgba(245,197,24,0.12)" stroke-width="1"/>
+</svg>
