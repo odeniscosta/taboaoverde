@@ -1,2 +1,4 @@
 status_code:
   404: /404.html
+http_strict_transport_security: true
+location_include: includes/*.conf
