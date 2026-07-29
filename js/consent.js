@@ -29,7 +29,15 @@
     window.gtag('consent', 'update', { ad_storage: 'denied', analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
     save('denied');
   }
+  function ensureStyles() {
+    if (document.getElementById('consent-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'consent-styles';
+    style.textContent = '.consent-banner{position:fixed;z-index:10000;right:20px;bottom:20px;left:20px;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:960px;margin:auto;padding:18px 20px;color:#f7faf8;background:#10251b;border:1px solid rgba(255,255,255,.2);border-radius:14px;box-shadow:0 16px 48px rgba(0,0,0,.3);font-family:system-ui,sans-serif}.consent-banner strong{display:block;margin-bottom:4px}.consent-banner p{margin:0;color:#d7e3dc;font-size:14px;line-height:1.5}.consent-banner a{color:#fff;text-decoration:underline}.consent-actions{display:flex;gap:10px;flex:0 0 auto}.consent-actions button{min-height:44px;padding:10px 16px;border:1px solid #fff;border-radius:8px;font:inherit;font-weight:700;cursor:pointer}.consent-reject{color:#fff;background:transparent}.consent-accept{color:#10251b;background:#fff}.consent-settings{position:fixed;z-index:9999;left:12px;bottom:12px;padding:8px 12px;color:#fff;background:#10251b;border:1px solid rgba(255,255,255,.45);border-radius:999px;font:12px system-ui,sans-serif;cursor:pointer}@media(max-width:680px){.consent-banner{align-items:stretch;flex-direction:column;gap:14px}.consent-actions{display:grid;grid-template-columns:1fr 1fr}}';
+    document.head.appendChild(style);
+  }
   function renderBanner() {
+    ensureStyles();
     const banner = document.createElement('section');
     banner.className = 'consent-banner';
     banner.setAttribute('role', 'dialog');
@@ -41,6 +49,7 @@
     banner.querySelector('.consent-reject').addEventListener('click', () => { deny(); close(); });
   }
   function renderSettings() {
+    ensureStyles();
     if (document.querySelector('.consent-settings')) return;
     const button = document.createElement('button');
     button.type = 'button';
