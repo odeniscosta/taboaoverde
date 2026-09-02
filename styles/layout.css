@@ -39,6 +39,12 @@
   flex-shrink: 0;
   border-radius: 8px;
 }
+.brand-logo--master {
+  width: 147px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 0;
+}
 .brand-text {
   display: flex;
   flex-direction: column;
@@ -138,6 +144,7 @@ body.nav-open .nav-toggle { color: var(--on-dark); }
 .nav-wa-btn { display: none; }
 @media (max-width: 600px) {
   .brand-logo { height: 38px; width: 38px; }
+  .brand-logo--master { width: 116px; height: 40px; }
   .brand-name { font-size: 17px; }
   .site-header { padding: 10px 0 6px; }
   .site-header.is-scrolled { padding: 8px 0 5px; }
@@ -146,6 +153,7 @@ body.nav-open .nav-toggle { color: var(--on-dark); }
 }
 @media (max-width: 480px) {
   .brand-logo { height: 34px; width: 34px; }
+  .brand-logo--master { width: 108px; height: 37px; }
   .brand-name { font-size: 16px; }
 }
 
