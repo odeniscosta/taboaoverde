@@ -1,0 +1,374 @@
+/*
+   iGreen alignment preview
+   Design read: local energy landing page with a dark-tech, premium brand layer.
+   This is a local preview layer. Official iGreen assets and brand guidelines
+   must be confirmed before production publication.
+*/
+
+:root {
+  --tv-paper: #060a07;
+  --tv-fog: #0b160e;
+  --tv-ink: #f1fff2;
+  --tv-ink-soft: rgba(241, 255, 242, .72);
+  --tv-ink-muted: rgba(241, 255, 242, .48);
+  --tv-forest: #071b0d;
+  --tv-green: #18ff00;
+  --tv-lime: #18ff00;
+  --tv-orange: #18ff00;
+  --tv-solar: #18ff00;
+  --white: #f1fff2;
+  --slate: #0b160e;
+  --ink: #f1fff2;
+  --ink-soft: rgba(241, 255, 242, .72);
+  --ink-muted: rgba(241, 255, 242, .48);
+  --forest: #071b0d;
+  --forest-alt: #0b2411;
+  --sage: #18ff00;
+  --lime: #18ff00;
+  --lime-dim: rgba(24, 255, 0, .10);
+  --lime-border: rgba(24, 255, 0, .28);
+  --solar: #18ff00;
+  --solar-dim: rgba(24, 255, 0, .09);
+  --solar-border: rgba(24, 255, 0, .25);
+  --midnight: #030603;
+  --midnight-alt: #071b0d;
+  --on-dark: #f1fff2;
+  --on-dark-soft: rgba(241, 255, 242, .72);
+  --on-dark-muted: rgba(241, 255, 242, .46);
+  --f-display: "Inter Display", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Poppins", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --r: 16px;
+  --r-sm: 12px;
+  --r-xs: 8px;
+  --shadow-sm: 0 8px 26px rgba(0, 0, 0, .16);
+  --shadow-md: 0 18px 54px rgba(0, 0, 0, .24);
+  --shadow-lg: 0 28px 86px rgba(0, 0, 0, .34);
+}
+
+html { background: var(--tv-paper); }
+body {
+  background: var(--tv-paper);
+  color: var(--tv-ink);
+}
+
+a { color: inherit; }
+h1, h2, h3, h4 { color: var(--tv-ink); }
+
+/* Header and brand hierarchy */
+.site-header {
+  background: rgba(3, 6, 3, .88);
+  border-bottom: 1px solid rgba(24, 255, 0, .14);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.site-header.is-scrolled {
+  background: rgba(3, 6, 3, .96);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .28);
+}
+.brand-logo {
+  border-radius: 0;
+  filter: drop-shadow(0 0 14px rgba(24, 255, 0, .20));
+}
+.brand-logo--master {
+  width: 147px;
+  height: 50px;
+  object-fit: contain;
+}
+.brand-name {
+  color: var(--tv-ink);
+  font-family: var(--f-display);
+  letter-spacing: -.04em;
+}
+.brand-partner { color: var(--tv-green); }
+.main-nav { gap: 22px; }
+.main-nav a { color: var(--tv-ink-soft); }
+.main-nav a:hover { color: var(--tv-green); }
+.main-nav a::after { background: var(--tv-green); }
+.header-actions .btn--solar,
+.main-nav .btn--solar {
+  background: var(--tv-green);
+  color: #031004;
+  border-color: var(--tv-green);
+}
+.header-actions .btn--solar:hover,
+.main-nav .btn--solar:hover { background: #baffad; }
+.nav-toggle { color: var(--tv-green); }
+
+/* Hero: asymmetric split, local message with master-brand cue */
+.hero {
+  min-height: min(840px, 100dvh);
+  background:
+    radial-gradient(ellipse 62% 70% at 86% 18%, rgba(24, 255, 0, .11), transparent 64%),
+    radial-gradient(ellipse 50% 60% at 6% 0%, rgba(24, 255, 0, .07), transparent 68%),
+    var(--tv-paper);
+  padding: 104px 0 72px;
+}
+.hero::before {
+  display: block;
+  background-image: linear-gradient(rgba(24, 255, 0, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(24, 255, 0, .035) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .55), transparent 70%);
+}
+.hero-wrap { gap: 64px; }
+.hero-copy { max-width: 610px; }
+.hero-badge {
+  color: var(--tv-green);
+  background: rgba(24, 255, 0, .08);
+  border-color: rgba(24, 255, 0, .34);
+}
+.hero h1 {
+  color: var(--tv-ink);
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: .98;
+  letter-spacing: -.055em;
+  max-width: 600px;
+}
+.hero-lede { color: var(--tv-ink-soft); max-width: 520px; }
+.hero-conditions { color: var(--tv-ink-muted); }
+.hero-actions .btn--solar {
+  background: var(--tv-green);
+  color: #031004;
+  border-color: var(--tv-green);
+}
+.hero-actions .btn--solar:hover { background: #baffad; }
+.btn--ghost-dark,
+.btn--ghost-light {
+  color: var(--tv-ink);
+  border-color: rgba(241, 255, 242, .24);
+  background: rgba(241, 255, 242, .03);
+}
+.btn--ghost-dark:hover,
+.btn--ghost-light:hover {
+  color: var(--tv-green);
+  border-color: rgba(24, 255, 0, .52);
+  background: rgba(24, 255, 0, .08);
+}
+.hero-trust-label { color: var(--tv-ink-muted); }
+.trust-pill {
+  color: var(--tv-ink-soft);
+  background: rgba(241, 255, 242, .05);
+  border-color: rgba(241, 255, 242, .13);
+}
+.hero-showcase {
+  background: rgba(11, 36, 17, .78);
+  border-color: rgba(24, 255, 0, .24);
+  box-shadow: inset 0 1px 0 rgba(241, 255, 242, .08), 0 24px 80px rgba(0, 0, 0, .30);
+}
+.hero-site-image img { filter: saturate(1.08) contrast(1.04); }
+.hero-site-image figcaption strong { color: var(--tv-green); }
+.hero-site-image figcaption span { color: var(--tv-ink-soft); }
+
+/* Shared dark surfaces */
+.credbar { background: #0b2411; border-color: rgba(24, 255, 0, .13); }
+.credbar-item strong { color: var(--tv-ink); }
+.credbar-item span { color: var(--tv-ink-muted); }
+.credbar-item svg { color: var(--tv-green); }
+.credbar-sep { background: rgba(241, 255, 242, .14); }
+
+.offer-showcase,
+.solutions,
+.how-it-works,
+.calculator,
+.faq,
+.contact { background: var(--tv-fog); color: var(--tv-ink); }
+.manifesto,
+.for-you,
+.impact,
+.testimonials,
+.coverage,
+.latest-blog { background: var(--tv-paper); color: var(--tv-ink); }
+.section-head h2,
+.section-head--dark h2 { color: var(--tv-ink) !important; }
+.section-head p,
+.section-head--dark p { color: var(--tv-ink-soft) !important; }
+.eyebrow,
+.eyebrow--ink { color: var(--tv-green); }
+
+/* Offer and solution hierarchy */
+.offer-card,
+.solution-card,
+.solution-card--extra,
+.testimonial-card,
+.impact-card,
+.channel,
+.contact-form,
+.founder-card,
+.calc-card,
+.faq-item,
+.latest-blog-grid .blog-card {
+  border-color: rgba(241, 255, 242, .12);
+}
+.offer-card,
+.solution-card,
+.solution-card--extra,
+.testimonial-card,
+.impact-card,
+.channel,
+.contact-form,
+.founder-card,
+.latest-blog-grid .blog-card {
+  background: rgba(11, 22, 14, .86);
+  color: var(--tv-ink);
+  box-shadow: none;
+}
+.offer-card:hover,
+.solution-card:hover,
+.solution-card--extra:hover,
+.testimonial-card:hover,
+.latest-blog-grid .blog-card:hover {
+  border-color: rgba(24, 255, 0, .52);
+  background: rgba(13, 30, 16, .94);
+  box-shadow: none;
+}
+.offer-card-media { background: #0b2411; }
+.offer-card-body p,
+.solution-desc,
+.extra-desc,
+.tab-solution-desc,
+.testimonial-card blockquote,
+.channel-label,
+.contact-form-note { color: var(--tv-ink-soft); }
+.offer-card-kicker,
+.offer-card-link,
+.solution-for,
+.extra-title,
+.solution-title,
+.tab-solution-name,
+.author-name,
+.channel-value { color: var(--tv-green); }
+.solution-card--green {
+  background: rgba(24, 255, 0, .08);
+  border-color: rgba(24, 255, 0, .34);
+}
+.solution-card--green .solution-title,
+.solution-card--green .solution-desc { color: var(--tv-ink); }
+.solution-highlight,
+.coverage-note,
+.step-note,
+.testimonial-product {
+  color: var(--tv-green);
+  background: rgba(24, 255, 0, .08);
+  border-color: rgba(24, 255, 0, .30);
+}
+.solution-highlight span { color: var(--tv-ink-muted); }
+.solution-icon,
+.extra-icon,
+.channel-icon { background: rgba(24, 255, 0, .09); }
+.solution-icon svg,
+.extra-icon svg,
+.channel-icon svg,
+.faq-q .chev,
+.city-pill svg { color: var(--tv-green); }
+.for-you-tabs { border-color: rgba(241, 255, 242, .14); }
+.tab-btn { color: var(--tv-ink-muted); }
+.tab-btn:hover,
+.tab-btn.is-active { color: var(--tv-green); }
+.tab-btn.is-active { border-bottom-color: var(--tv-green); }
+.tab-solution-item { background: rgba(11, 36, 17, .80); }
+.tab-solution-dot,
+.step-dot { background: var(--tv-green); box-shadow: 0 0 16px rgba(24, 255, 0, .32); }
+
+/* Process, calculator and trust blocks */
+.manifesto { background: #071b0d; }
+.manifesto::before { background: radial-gradient(circle, rgba(24, 255, 0, .08), transparent 70%); }
+.manifesto blockquote { color: var(--tv-green); border-left-color: var(--tv-green); }
+.manifesto-copy,
+.manifesto-stat span { color: var(--tv-ink-soft); }
+.manifesto-stats { border-top-color: rgba(241, 255, 242, .14); }
+.manifesto-stat:not(:last-child) { border-right-color: rgba(241, 255, 242, .14); }
+.manifesto-stat strong,
+.impact-card .num { color: var(--tv-green); }
+.how-it-works::before { background: radial-gradient(circle, rgba(24, 255, 0, .07), transparent 66%); }
+.steps-grid::before { background: rgba(24, 255, 0, .25); }
+.step-num { color: var(--tv-green); }
+.step h3 { color: var(--tv-ink) !important; }
+.step p { color: var(--tv-ink-soft); }
+.calc-card { background: #071b0d; border-color: rgba(24, 255, 0, .30); box-shadow: var(--shadow-md); }
+.calc-input,
+.calc-prefix,
+.calc-form input,
+.calc-form select,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  color: var(--tv-ink);
+  background: rgba(3, 6, 3, .60);
+  border-color: rgba(241, 255, 242, .18);
+}
+.calc-input::placeholder,
+.calc-form input::placeholder,
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: var(--tv-ink-muted); }
+.calc-input:focus,
+.calc-form input:focus,
+.calc-form select:focus,
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--tv-green);
+  box-shadow: 0 0 0 3px rgba(24, 255, 0, .14);
+  outline: none;
+}
+.calc-result-card { background: rgba(241, 255, 242, .06); border-color: rgba(241, 255, 242, .14); }
+.calc-card .btn--ghost-light { color: var(--tv-ink); border-color: rgba(241, 255, 242, .28); }
+.calc-card .btn--ghost-light:hover { color: var(--tv-green); border-color: var(--tv-green); }
+.faq-item { border-bottom-color: rgba(241, 255, 242, .14); }
+.faq-q { color: var(--tv-ink); }
+.faq-q:hover,
+.faq-item.is-open .faq-q { color: var(--tv-green); }
+.city-pill { color: var(--tv-ink); background: rgba(11, 36, 17, .82); }
+.coverage-visual { background: #071b0d; box-shadow: var(--shadow-md); }
+.coverage-note { color: var(--tv-ink-soft); }
+.contact-form { box-shadow: var(--shadow-md); }
+.channel:hover { background: rgba(24, 255, 0, .08); }
+.author-avatar { background: var(--tv-green); color: #031004; }
+.testimonial-author { border-top-color: rgba(241, 255, 242, .14); }
+
+/* Footer and floating contact */
+.site-footer { background: #030603; border-top-color: rgba(24, 255, 0, .16); }
+.footer-tagline,
+.footer-copy,
+.footer-nav a,
+.footer-contact-item { color: var(--tv-ink-muted); }
+.footer-nav-title { color: var(--tv-ink-soft); }
+.footer-contact-item svg { color: var(--tv-green); }
+.footer-seal { color: var(--tv-ink-soft); border-color: rgba(241, 255, 242, .16); }
+.footer-bottom { border-top-color: rgba(241, 255, 242, .11); }
+.footer-social a { color: var(--tv-ink-muted); border-color: rgba(241, 255, 242, .16); }
+.footer-social a:hover { color: var(--tv-green); border-color: var(--tv-green); background: rgba(24, 255, 0, .08); }
+.whatsapp-float { box-shadow: 0 10px 30px rgba(37, 211, 102, .28); }
+.whatsapp-float:hover { box-shadow: 0 16px 38px rgba(37, 211, 102, .38); }
+
+@media (max-width: 900px) {
+  /* backdrop-filter on the fixed header would make the fixed mobile menu
+     inherit the header's containing block instead of covering the viewport. */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .main-nav { background: rgba(3, 6, 3, .98); }
+  .main-nav a { color: var(--tv-ink); }
+  .main-nav a:hover { color: var(--tv-green); }
+  .main-nav .btn--solar { color: #031004; }
+}
+
+@media (max-width: 640px) {
+  .brand-logo--master { width: 116px; height: 40px; }
+  .brand-name { font-size: 16px; }
+  .brand-partner { font-size: 9px; }
+  .hero { min-height: auto; padding: 92px 0 56px; }
+  .hero h1 { font-size: clamp(38px, 11vw, 54px); }
+  .hero-wrap { gap: 34px; }
+  .hero-showcase { padding: 9px; }
+  .hero-site-image figcaption { padding: 12px 3px 1px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .btn,
+  .offer-card,
+  .solution-card,
+  .testimonial-card,
+  .channel { transition: none; }
+}

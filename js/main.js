@@ -15,15 +15,25 @@ if (typeof CONFIG === 'undefined') {
 
 const WA = CONFIG.whatsapp;
 
+function trackEvent(name, params = {}) {
+  if (typeof window.gtag === 'function') window.gtag('event', name, params);
+}
+
+window.trackTVEvent = trackEvent;
+
 // ── Ano no footer ──
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ── Header scroll ──
 const header = document.getElementById('siteHeader');
-const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 16);
-onScroll();
-window.addEventListener('scroll', onScroll, { passive: true });
+const scrollSentinel = document.getElementById('scrollSentinel');
+if (header && scrollSentinel && 'IntersectionObserver' in window) {
+  const headerObserver = new IntersectionObserver(([entry]) => {
+    header.classList.toggle('is-scrolled', !entry.isIntersecting);
+  });
+  headerObserver.observe(scrollSentinel);
+}
 
 // ── Menu mobile ──
 const navToggle = document.getElementById('navToggle');
@@ -42,6 +52,17 @@ navToggle.addEventListener('click', () => {
 });
 
 mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const location = link.closest('header') ? 'header'
+      : link.closest('#calculadora') ? 'calculadora'
+      : link.closest('footer') ? 'footer'
+      : link.classList.contains('whatsapp-float') ? 'floating'
+      : 'content';
+    trackEvent('whatsapp_click', { location });
+  });
+});
 
 // ── Tabs "Para você" ──
 const tabBtns   = document.querySelectorAll('.tab-btn');
@@ -124,11 +145,14 @@ if (contactForm) {
     };
 
     // Envia ao n8n (sem bloquear o fluxo)
-    fetch(CONFIG.webhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    }).catch(() => {});
+    if (CONFIG.webhookUrl) {
+      fetch(CONFIG.webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      }).catch(() => {});
+    }
+    trackEvent('contact_form_submit', { client_type: tipo || 'not_selected' });
 
     // Abre WhatsApp com mensagem pronta
     const texto = [
@@ -138,6 +162,7 @@ if (contactForm) {
     ].filter(Boolean).join(' ');
 
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+    trackEvent('whatsapp_open', { source: 'contact_form' });
   });
 }
 

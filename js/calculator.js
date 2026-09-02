@@ -13,6 +13,14 @@ const RATES = {
 const fmt = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
 
 let calcData = { bill: 0, solution: 'solar' };
+const track = (name, params = {}) => window.trackTVEvent?.(name, params);
+
+function billRange(value) {
+  if (value < 300) return '50-299';
+  if (value < 600) return '300-599';
+  if (value < 1000) return '600-999';
+  return '1000-plus';
+}
 
 // ── Elementos ──
 const step1    = document.getElementById('calc-step-1');
@@ -40,6 +48,7 @@ calcBtn1?.addEventListener('click', () => {
     return;
   }
   calcData.bill = val;
+  track('simulation_started', { bill_range: billRange(val) });
   renderResults(val);
   showStep(step2);
 });
@@ -101,22 +110,25 @@ calcWaDirect?.addEventListener('click', () => {
     `Quero saber mais!`,
   ].join(' ');
 
-  fetch(CONFIG.webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      nome: 'Não informado',
-      whatsapp: null,
-      tipo_cliente: null,
-      valor_conta: calcData.bill,
-      solucao_interesse: solutionLabel,
-      origem: 'calculadora_direto',
-      consentimento: true,
-      created_at: new Date().toISOString(),
-    }),
-  }).catch(() => {});
+  if (CONFIG.webhookUrl) {
+    fetch(CONFIG.webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nome: 'Não informado',
+        whatsapp: null,
+        tipo_cliente: null,
+        valor_conta: calcData.bill,
+        solucao_interesse: solutionLabel,
+        origem: 'calculadora_direto',
+        consentimento: true,
+        created_at: new Date().toISOString(),
+      }),
+    }).catch(() => {});
+  }
 
   window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+  track('simulation_whatsapp', { solution: calcData.solution, source: 'direct' });
   showStep(stepOk);
 });
 
@@ -154,11 +166,13 @@ calcForm?.addEventListener('submit', async (e) => {
   };
 
   // Envia ao n8n (sem bloquear)
-  fetch(CONFIG.webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  }).catch(() => {});
+  if (CONFIG.webhookUrl) {
+    fetch(CONFIG.webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }).catch(() => {});
+  }
 
   // Monta texto para WhatsApp
   const saving = fmt(Math.round(calcData.bill * RATES[calcData.solution].max));
@@ -170,5 +184,6 @@ calcForm?.addEventListener('submit', async (e) => {
   ].join(' ');
 
   window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+  track('simulation_lead_submit', { solution: calcData.solution, client_type: tipo || 'not_selected' });
   showStep(stepOk);
 });

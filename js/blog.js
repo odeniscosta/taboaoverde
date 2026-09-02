@@ -12,6 +12,11 @@
   };
 
   const MONTHS = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+  const DEFAULT_IMAGE_WIDTH = 800;
+  const DEFAULT_IMAGE_HEIGHT = 450;
+  const IMAGE_DIMENSIONS = {
+    '/images/blog/energia-solar-para-igrejas.jpg': [1200, 675],
+  };
 
   function formatDate(str) {
     const [y, m, d] = str.split('-');
@@ -20,7 +25,8 @@
 
   function imgHTML(post) {
     if (post.image) {
-      return `<img class="blog-card-img" src="${post.image}" alt="${post.title}" loading="lazy">`;
+      const [width, height] = IMAGE_DIMENSIONS[post.image] || [DEFAULT_IMAGE_WIDTH, DEFAULT_IMAGE_HEIGHT];
+      return `<img class="blog-card-img" src="${post.image}" alt="${post.title}" loading="lazy" width="${width}" height="${height}">`;
     }
     return `<div class="blog-card-img-placeholder" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
