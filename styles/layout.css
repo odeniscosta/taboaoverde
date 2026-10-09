@@ -197,6 +197,10 @@ body.nav-open .nav-toggle { color: var(--on-dark); }
 .footer-contact-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--on-dark-soft); }
 .footer-contact-item svg { width: 15px; height: 15px; color: var(--lime); flex-shrink: 0; }
 
+.footer-partners { margin-bottom: 32px; }
+.footer-partners nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.footer-partners nav a { color: var(--on-dark-soft); font-size: 14px; }
+.footer-partners nav a:hover { color: var(--on-dark); }
 .footer-bottom {
   border-top: 1px solid rgba(237,244,240,0.08);
   padding-top: 28px;
