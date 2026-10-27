@@ -1,0 +1,28 @@
+{
+  "siteUrl": "https://taboaoverde.com.br",
+  "brand": "Taboão Verde",
+  "author": "Denis Costa",
+  "assetsRoot": "",
+  "imagePrefix": "..",
+  "postFile": "blog/{slug}.html",
+  "postUrl": "https://taboaoverde.com.br/blog/{slug}.html",
+  "listHref": "{slug}.html",
+  "blogIndexUrl": "https://taboaoverde.com.br/blog/",
+  "defaultImage": "https://taboaoverde.com.br/images/og-image.jpg",
+  "creditStyle": "margin-top:8px;opacity:.75",
+  "figure": "<img class=\"blog-post-featured-img\" src=\"{{src}}\" alt=\"{{alt}}\" fetchpriority=\"high\" width=\"1200\" height=\"675\">\n    {{{credit}}}",
+  "sitemap": "sitemap.xml",
+  "listings": [
+    {
+      "type": "postsJson",
+      "file": "blog/posts.json",
+      "defaultImage": "/images/og-image.jpg"
+    },
+    {
+      "type": "insert",
+      "file": "blog/index.html",
+      "marker": "<ul style=\"list-style:none;padding:0;display:grid;gap:12px\">",
+      "item": "\n        <li><a href=\"{{href}}\">{{title}}</a></li>"
+    }
+  ]
+}
