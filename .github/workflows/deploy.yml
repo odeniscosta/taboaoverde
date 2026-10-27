@@ -23,6 +23,6 @@ jobs:
           printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
           printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
           # A chave só executa /opt/site-deploy/trigger.sh no servidor (comando forçado).
-          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes root@187.77.227.34 "deploy taboaoverde ${GITHUB_SHA}"
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=10 root@187.77.227.34 "deploy taboaoverde ${GITHUB_SHA}"
       - name: Conferir site no ar
         run: curl -fsS -o /dev/null -w "%{http_code}\n" "https://taboaoverde.com.br/"
