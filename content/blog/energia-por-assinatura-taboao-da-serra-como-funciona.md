@@ -9,6 +9,10 @@ tags:
   - "conta de luz"
   - "Taboão da Serra"
   - "energia solar"
+cover: "/blog/energia-por-assinatura-taboao-da-serra-como-funciona.webp"
+coverAlt: "Energia por assinatura em Taboão da Serra: como funciona na prática"
+coverCredit: "Ground mounted solar panels.gk, por Grendelkhan — CC BY-SA 4.0, via Wikimedia Commons"
+coverCreditUrl: "https://commons.wikimedia.org/wiki/File:Ground_mounted_solar_panels.gk.jpg"
 author: "Denis Costa"
 draft: false
 ---
@@ -68,10 +72,13 @@ Se a sua unidade tiver um consumo muito baixo, a diferença final pode ser peque
 
 ## Energia por assinatura ou sistema próprio?
 
-Quem quer gerar a própria energia pode considerar a instalação de um sistema solar, que exige investimento inicial e projeto técnico. Já a energia por assinatura dispensa obras e compra de equipamentos, mas o desconto depende do contrato. Para comparar os caminhos, veja as opções de kits e microinversores na nossa [página de ofertas](/ofertas).
+Ficou com alguma dúvida sobre energia por assinatura? Fale com a nossa equipe pelo WhatsApp 1196606-7829.
 
-Para entender melhor os conceitos, visite também o [blog](/blog), onde reunimos outros conteúdos sobre energia solar e conta de luz.
+Produtos:
+- Conexão Livre
+- Conexão Solar
+- Conexão Green
 
-## Fale com a nossa equipe
+Taboão verde faz parte da Igreen Energy conheça mais em igreenenergy.com.br
 
-Ficou com alguma dúvida sobre energia por assinatura em Taboão da Serra? Fale com a nossa equipe pelo WhatsApp, pelo botão logo abaixo deste texto. Respondemos com calma e sem compromisso, para você decidir com segurança.
+Denis Costa
