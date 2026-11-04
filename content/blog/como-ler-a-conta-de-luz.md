@@ -1,6 +1,6 @@
 ---
 title: "Como ler a conta de luz: guia com bandeiras, TUSD, TE e iluminação pública"
-description: "Aprenda como ler a conta de luz em Taboão da Serra: bandeiras, TUSD, TE, iluminação pública e os campos da fatura explicados de forma simples."
+description: "Aprenda como ler a conta de luz: bandeiras, TUSD, TE, iluminação pública e os campos da fatura explicados de forma simples."
 date: "2026-11-04"
 slug: "como-ler-a-conta-de-luz"
 tags:
@@ -9,6 +9,8 @@ tags:
   - "TUSD e TE"
   - "energia por assinatura"
   - "Taboão da Serra"
+cover: "/blog/como-ler-a-conta-de-luz.webp"
+coverAlt: "Como ler a conta de luz: guia com bandeiras, TUSD, TE e iluminação pública"
 author: "Denis Costa"
 draft: false
 ---
