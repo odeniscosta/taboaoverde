@@ -8,6 +8,8 @@ tags:
   - "energia por assinatura"
   - "geração distribuída"
   - "conta de luz"
+cover: "/blog/energia-solar-sem-placas-vale-a-pena.webp"
+coverAlt: "Energia solar sem placas: vale a pena? Veja custo, telhado e manutenção"
 author: "Denis Costa"
 draft: false
 ---
