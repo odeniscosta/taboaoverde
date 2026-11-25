@@ -1,5 +1,5 @@
 ---
-title: "Energia por assinatura empresas Taboão da Serra: guia para salões, oficinas e mercados"
+title: "Energia por assinatura empresas em Taboão da Serra"
 description: "Veja quem pode aderir à energia por assinatura empresas Taboão da Serra, documentos necessários e o que muda na conta de salões, oficinas e mercados."
 date: "2026-11-25"
 slug: "energia-por-assinatura-empresas-taboao-da-serra-pequenos-negocios"
@@ -9,6 +9,8 @@ tags:
   - "conta de luz"
   - "Taboão da Serra"
   - "geração distribuída"
+cover: "/blog/energia-por-assinatura-empresas-taboao-da-serra-pequenos-negocios.webp"
+coverAlt: "Energia por assinatura empresas em Taboão da Serra"
 author: "Denis Costa"
 draft: false
 ---
